@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details Verification OTAS</title>
+    <style>        
+        @keyframes fadeInAnimation {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .col-md-10{
+            padding-left: 20px;
+        }
+        body {
+            opacity: 0;
+            animation: fadeInAnimation 2s ease-in-out forwards;
+            background-image: url("b2.jpg"); /* Replace with your image path */
+            background-position: center;
+            background-size: cover;
+            background-color: rgb(255, 255, 255);
+            color: rgb(255, 255, 255);
+            margin: 10px;
+            display: flex;
+            align-items: center;
+            background-attachment: fixed;
+            width: 100%;
+            padding-left: 100px;
+            height: 100vh;
+            border-radius: 10px;
+            filter: brightness(100%); /* Adjust the brightness as needed */
+        }                   
+        hr {
+            color: rgb(255, 255, 255);
+        }
+        .Page {
+            font-size: 1.3em;
+        }
+        .Student-Details .row {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        .text-danger {
+            color: rgb(255, 255, 255);
+            margin-top: 5px;
+        }
+        .line_break {
+            border-width: 0.5px;
+            border-style: solid;
+            border-color: rgb(255, 255, 255);
+        }
+        </style>
+</head>
+<body id="for_body">
+    <div class="wow fadeIn Page" style="padding:20px;width: 80%;background: rgba(54, 25, 25, 0.4);border-radius: 10px;">
+        <h4 style="font-family:'Arial Rounded MT';">Your Details</h4>
+        <hr>
+        <div class="Student-Details">
+            <div class="row">
+                <div style="font-family:'Arial Rounded MT';">
+                    Name
+                </div>
+                <div >
+                    <!-- Replace with actual data -->
+                </div>
+            </div>
+            <div class="row">
+                <div style="font-family:'Arial Rounded MT';flex: 0 0 16.666667%; ">
+                    Department
+                </div>
+                <div >
+                    <!-- Replace with actual data -->
+                </div>
+            </div>
+            <div class="row">
+                <div style="font-family:'Arial Rounded MT';flex: 0 0 16.666667%;">
+                    Semester
+                </div>
+                <div >
+                    <!-- Replace with actual data -->
+                </div>
+            </div>
+            <div class="row">
+                <div style="font-family:'Arial Rounded MT';flex: 0 0 16.666667%; ">
+                    Section
+                </div>
+                <div >
+                    <!-- Replace with actual data -->
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div >
+                <section id="loginForm">
+                    <h4 style="font-family:'Arial Rounded MT';">Please fill up your contact details</h4>
+                    <div class="text-danger">
+                        <!-- Validation summary goes here -->
+                    </div>
+                    <form action="">
+                    <div >                        
+                            <div style="font-family:'Arial Rounded MT';" class="col-md-10">
+                                <label style="flex: 0 0 16.666667%; " for="PRIMARY_CONTACT" class="col-md-2 control-label">
+                                    Mobile &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input style="border-radius: 10px;height: 25px;width: 300px;" type="text" id="PRIMARY_CONTACT" class="form-control" autocomplete="off" required="required">
+                            </label>
+                                <div class="text-danger">
+                                    <!-- PRIMARY_CONTACT validation message goes here -->
+                                </div>
+                            </div>          
+                    </div><br>
+                    <div >                        
+                            <div style="font-family:'Arial Rounded MT';flex: 0 0 16.666667%; " class="col-md-10">
+                                <label style="flex: 0 0 16.666667%; " for="EMail" class="col-md-2 control-label">
+                                    E-mail&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input style="width: 300px;height: 25px;border-radius: 10px;" type="email" id="EMail" class="form-control" autocomplete="off" required="required">
+                            </label>
+                                <div class="text-danger">
+                                    <!-- EMail validation message goes here -->
+                                </div>
+                            </div>                  
+                    </div>
+                    <style>
+                        input[type="submit"] {
+                        background-color: rgb(76, 168, 175); 
+                        color: white;
+                        padding: 10px 20px; 
+                        font-size: 16px; 
+                        border: none; 
+                        border-radius: 5px; 
+                        cursor: pointer; 
+                        }
+                        input[type="submit"]:hover {
+                            background-color: #4b45a0; 
+                        }
+                    </style><br>
+                    <p>
+                        <div style="flex: 0 0 100%; max-width: 100%;" class="form-group">
+                            <div class="col-md-offset-2 col-md-10">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input style="border-radius: 10px;" type="submit" value="Submit" class="btn btn-primary" onclick="submitForm()">
+                            </div>
+                            
+                        </div>
+                    </p>
+                </form>
+                <script>
+                    function submitForm() {
+                        // Get the values from the form
+                        var email = document.getElementById('EMail').value;
+                        var phone = document.getElementById('PRIMARY_CONTACT').value;
+                        // Save the values local storage, etc.)
+                        window.location.href = 'InstructionPage.html';
+                    }
+                </script>
+                    <br><br>
+                    <hr>
+                    &copy; 2024 - OTAS 4.0
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
