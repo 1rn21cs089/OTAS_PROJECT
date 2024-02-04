@@ -37,7 +37,7 @@
         }
 
         body {
-            background-image: url("Background.jpeg");
+            background-image: url("D:/OTAS/Background.jpeg");
             background-position: center;
             background-size: cover;
             background-attachment: fixed;
@@ -72,6 +72,19 @@
         .fade-in-right{
             animation: fadeInRight 2s ease;
         }
+        input[type="submit"] {
+                        background-color: rgb(0, 157, 255); 
+                        color: white;
+                        padding: 10px 20px; 
+                        font-size: 16px; 
+                        font-weight: bold;
+                        border: none; 
+                        border-radius: 5px; 
+                        cursor: pointer; 
+                        }
+                        input[type="submit"]:hover {
+                            background-color: #456cae; 
+                        }
     </style>
 </head>
 <body>
@@ -108,12 +121,13 @@
         </ul>
         <br />
 
-        <div class="fade-In-Left">
-            <form action="StudentDetails" method="get">
-                <input type="submit" value="Proceed" class="btn-primary" />
-            </form>
+        <div class="form-group">
+            <div class="fade-In-Left">
+                <form action="StudentDetails" method="get">
+                    <input type="submit" value="Proceed" class="btn btn-primary"/>
+                </form>
+            </div>
         </div>
     </div>
 </body>
 </html>
-
