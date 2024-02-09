@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Edit Teacher</title>
+<style>
+    /* styles.css */
+
+/* Add a light gray background to the form */
+form {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f0f0f0; /* Light gray background */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease; /* Add transition for smooth effect */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  width: 400px;
+  margin: 20px auto;
+  margin-top: 10px;
+}
+
+label {
+  margin-top: 10px;
+  display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: calc(100% - 20px);
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+</style>
+
+</head>
+<body>
+
+<form action="edit_teacher.php" method="post">
+    <h2>Edit Teacher</h2>
+  <label for="tid">Teacher ID:</label><br>
+  <input type="text" id="tid" name="tid" required><br>
+  <label for="fname">First Name:</label><br>
+  <input type="text" id="fname" name="fname" required><br>
+  <label for="lname">Last Name:</label><br>
+  <input type="text" id="lname" name="lname"><br>
+  <label for="dept">Department ID:</label><br>
+  <input type="text" id="dept" name="dept" required><br>
+  <label for="designation">Designation:</label><br>
+  <input type="text" id="designation" name="designation" required><br>
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" required><br>
+  <label for="password">Password:</label><br>
+  <input type="password" id="password" name="password" required><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
